@@ -8,7 +8,7 @@ import * as THREE from 'three'
 
 /* ===================== 3D BACKGROUND ===================== */
 
-function ParticleOrbit(): {
+function ParticleOrbit() {
   const points = useRef<THREE.Points>(null!)
   const count = 1600
 
