@@ -46,7 +46,7 @@ function ParticleOrbit() {
   )
 }
 
-function Hero3D(): {
+function Hero3D() {
   return (
     <Canvas
       camera={{ position: [0, 0, 7], fov: 50 }}
@@ -63,7 +63,7 @@ function Hero3D(): {
 
 /* ===================== MAIN ===================== */
 
-export default function Home(): {
+export default function Home() {
   return (
     <main className="bg-[#0E1117] text-[#E5E7EB] overflow-hidden relative">
       <Navbar />
@@ -83,7 +83,7 @@ export default function Home(): {
 
 /* ===================== NAV ===================== */
 
-function Navbar(): {
+function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 backdrop-blur-xl bg-black/30 border-b border-white/10 px-6 py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -103,7 +103,7 @@ function Navbar(): {
 
 /* ===================== HERO ===================== */
 
-function Hero(): {
+function Hero() {
   return (
     <section className="relative min-h-screen flex items-center">
       <Hero3D />
@@ -139,7 +139,7 @@ function Hero(): {
 
 /* ===================== CUSTOMER LOGOS ===================== */
 
-function CustomerLogos(): {
+function CustomerLogos() {
   const logos = [
     "file.svg",
     "globe.svg",
@@ -165,7 +165,7 @@ function CustomerLogos(): {
 
 /* ===================== PROBLEMS ===================== */
 
-function Problems(): {
+function Problems() {
   return (
     <section className="py-24 max-w-7xl mx-auto px-6 text-center">
       <h2 className="text-4xl font-semibold mb-8">
@@ -190,7 +190,7 @@ function Problems(): {
 
 /* ===================== SOLUTIONS ===================== */
 
-function Solutions(): {
+function Solutions() {
   return (
     <section id="products" className="py-24 max-w-7xl mx-auto px-6">
       <h2 className="text-4xl font-semibold text-center mb-12">
@@ -216,7 +216,7 @@ function Solutions(): {
 
 /* ===================== PRODUCT SHOWCASE ===================== */
 
-function ProductShowcase(): {
+function ProductShowcase() {
   return (
     <section className="py-24 bg-white/5">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
@@ -253,7 +253,7 @@ function ProductShowcase(): {
 
 /* ===================== STATS / ROI ===================== */
 
-function StatsSection(): {
+function StatsSection() {
   return (
     <section className="py-20 text-center bg-black/20">
       <div className="max-w-4xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -274,7 +274,7 @@ function StatsSection(): {
 
 /* ===================== HOW IT WORKS ===================== */
 
-function HowItWorks(): {
+function HowItWorks() {
   return (
     <section className="py-40 max-w-7xl mx-auto px-6">
       <h2 className="text-4xl md:text-5xl font-semibold text-center mb-20">
@@ -305,7 +305,7 @@ function HowItWorks(): {
 
 /* ===================== FEATURES ===================== */
 
-function Features(): {
+function Features() {
   return (
     <section className="py-40 bg-white/5">
       <div className="max-w-7xl mx-auto px-6">
@@ -337,7 +337,7 @@ function Features(): {
 
 /* ===================== CALL TO ACTION ===================== */
 
-function CTA(): {
+function CTA() {
   return (
     <section className="py-20 bg-teal-300 text-black text-center rounded-xl mx-6 my-20 transition transform hover:scale-105 hover:shadow-2xl">
       <h2 className="text-3xl font-semibold mb-4">
@@ -352,7 +352,7 @@ function CTA(): {
 
 /* ===================== FOOTER ===================== */
 
-function Footer(): {
+function Footer() {
   return (
     <footer className="py-10 text-center text-gray-500 text-sm border-t border-white/10">
       © {new Date().getFullYear()} Suronex. All rights reserved.
