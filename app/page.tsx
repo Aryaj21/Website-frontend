@@ -8,7 +8,7 @@ import * as THREE from 'three'
 
 /* ===================== 3D BACKGROUND ===================== */
 
-function ParticleOrbit(): JSX.Element {
+function ParticleOrbit(): {
   const points = useRef<THREE.Points>(null!)
   const count = 1600
 
@@ -46,7 +46,7 @@ function ParticleOrbit(): JSX.Element {
   )
 }
 
-function Hero3D(): JSX.Element {
+function Hero3D(): {
   return (
     <Canvas
       camera={{ position: [0, 0, 7], fov: 50 }}
@@ -63,7 +63,7 @@ function Hero3D(): JSX.Element {
 
 /* ===================== MAIN ===================== */
 
-export default function Home(): JSX.Element {
+export default function Home(): {
   return (
     <main className="bg-[#0E1117] text-[#E5E7EB] overflow-hidden relative">
       <Navbar />
@@ -83,7 +83,7 @@ export default function Home(): JSX.Element {
 
 /* ===================== NAV ===================== */
 
-function Navbar(): JSX.Element {
+function Navbar(): {
   return (
     <nav className="fixed top-0 w-full z-50 backdrop-blur-xl bg-black/30 border-b border-white/10 px-6 py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -103,7 +103,7 @@ function Navbar(): JSX.Element {
 
 /* ===================== HERO ===================== */
 
-function Hero(): JSX.Element {
+function Hero(): {
   return (
     <section className="relative min-h-screen flex items-center">
       <Hero3D />
@@ -139,7 +139,7 @@ function Hero(): JSX.Element {
 
 /* ===================== CUSTOMER LOGOS ===================== */
 
-function CustomerLogos(): JSX.Element {
+function CustomerLogos(): {
   const logos = [
     "file.svg",
     "globe.svg",
@@ -165,7 +165,7 @@ function CustomerLogos(): JSX.Element {
 
 /* ===================== PROBLEMS ===================== */
 
-function Problems(): JSX.Element {
+function Problems(): {
   return (
     <section className="py-24 max-w-7xl mx-auto px-6 text-center">
       <h2 className="text-4xl font-semibold mb-8">
@@ -190,7 +190,7 @@ function Problems(): JSX.Element {
 
 /* ===================== SOLUTIONS ===================== */
 
-function Solutions(): JSX.Element {
+function Solutions(): {
   return (
     <section id="products" className="py-24 max-w-7xl mx-auto px-6">
       <h2 className="text-4xl font-semibold text-center mb-12">
@@ -216,7 +216,7 @@ function Solutions(): JSX.Element {
 
 /* ===================== PRODUCT SHOWCASE ===================== */
 
-function ProductShowcase(): JSX.Element {
+function ProductShowcase(): {
   return (
     <section className="py-24 bg-white/5">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
@@ -253,7 +253,7 @@ function ProductShowcase(): JSX.Element {
 
 /* ===================== STATS / ROI ===================== */
 
-function StatsSection(): JSX.Element {
+function StatsSection(): {
   return (
     <section className="py-20 text-center bg-black/20">
       <div className="max-w-4xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -274,7 +274,7 @@ function StatsSection(): JSX.Element {
 
 /* ===================== HOW IT WORKS ===================== */
 
-function HowItWorks(): JSX.Element {
+function HowItWorks(): {
   return (
     <section className="py-40 max-w-7xl mx-auto px-6">
       <h2 className="text-4xl md:text-5xl font-semibold text-center mb-20">
@@ -305,7 +305,7 @@ function HowItWorks(): JSX.Element {
 
 /* ===================== FEATURES ===================== */
 
-function Features(): JSX.Element {
+function Features(): {
   return (
     <section className="py-40 bg-white/5">
       <div className="max-w-7xl mx-auto px-6">
@@ -337,7 +337,7 @@ function Features(): JSX.Element {
 
 /* ===================== CALL TO ACTION ===================== */
 
-function CTA(): JSX.Element {
+function CTA(): {
   return (
     <section className="py-20 bg-teal-300 text-black text-center rounded-xl mx-6 my-20 transition transform hover:scale-105 hover:shadow-2xl">
       <h2 className="text-3xl font-semibold mb-4">
@@ -352,7 +352,7 @@ function CTA(): JSX.Element {
 
 /* ===================== FOOTER ===================== */
 
-function Footer(): JSX.Element {
+function Footer(): {
   return (
     <footer className="py-10 text-center text-gray-500 text-sm border-t border-white/10">
       © {new Date().getFullYear()} Suronex. All rights reserved.
